@@ -8,14 +8,14 @@
 	
 ## 相关函数:
 ```
-//queue
+1.queue
 //init_node	初始化新节点
 task_t *init_node(void);
 	
 //init_insert_node	新建结点尾插入链表
 task_t *init_insert_node(void)
 	
-//threads
+2.threads
 //init_pool	初始化线程池
 //pool_t *p	线程池结构体指针
 //unsigned int pthread_num	初始化线程数
@@ -31,7 +31,7 @@ int add_thread(pool_t *pool, unsigned int additional_threads);
 //unsigned int removing_threads	需要删除的线程数
 int remove_thread(pool_t *pool, unsigned int removing_threads);
 	
-//FileIO
+3.FileIO
 //file_size 计算文件大小 分段 
 //char *src_name	所要计算的文件路径
 int file_size(char *src_name);
@@ -50,4 +50,4 @@ int copy_file(task_t *task);
 运行时给定源拷贝路径和目标拷贝路径(example：./main SourceCopyPath TargetCopyPath)
 	
 ## 编译：
-`make`	或 `gcc -o main *.c -lphread<br>`
+`make`	或 `gcc -o main *.c -lphread`
